@@ -6,7 +6,7 @@
 function log {
 DATE2=$(date +"%Y-%m-%d %T,%s")
 if [[ $1 == 0 ]]; then
-        echo -e "[$DATE2] INFO - Completed Step: $2" | tee -a /tmp/logs/$distcp_log
+        echo -e "[$DATE2] INFO - $2" | tee -a /tmp/logs/$distcp_log
 else
         echo -e "[$DATE2] ERROR - Failed on Step: $2" | tee -a  /tmp/logs/$distcp_err
         exit 1;
@@ -45,6 +45,6 @@ elif [ "$1" = "diff_report" ]
 then
     diff_report
 else
-        echo "Invalid env"
-        exit 1;
+    echo "Invalid env"
+    exit 1;
 fi
