@@ -4,12 +4,12 @@
 now=$(date +'%Y-%m-%d')
 
 #PROD and DR Nameservice ID (Namenode Host)
-prod=ip-172-40-1-51.ec2.internal
-dr=ip-172-40-1-51.ec2.internal
+prod=ip-1-1-1-1.ec2.internal
+dr=ip-172-1-1-1.ec2.internal
 
 #Prod host that will execute commands 
-prod_host=ip-172-40-1-169.ec2.internal
-hive_host=ip-172-40-1-115.ec2.internal
+prod_host=ip-1-1-1-1.ec2.internal
+hive_host=ip-172-1-1-1.ec2.internal
 
 #Daily logs
 ##Multiple runs will be appended
